@@ -229,7 +229,7 @@ footer {
 .primary-navigation {
   position: fixed;
   top: 0;
-  right: 0; /* Completely hidden off-screen to the right */
+  right: 0;
   width: 0;
   height: 100vh;
   background-color: var(--clr-neutral-200);
@@ -239,11 +239,24 @@ footer {
   padding-left: 40px;
   gap: 20px;
   list-style: none;
-  transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  overflow: hidden;
+  transform: translateX(100%);
+  transition:
+    width 0.3s ease,
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    transform 0.3s ease;
   z-index: 200;
 }
 .primary-navigation.open {
   width: 100vw;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(0);
 }
 .hamburger-menu.open .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
