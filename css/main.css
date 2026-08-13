@@ -448,7 +448,7 @@ h3 {
     align-items: center;
   }
   .primary-navigation {
-    position: initial;
+    position: static;
     margin: 0;
     padding: 0;
     width: fit-content;
@@ -456,7 +456,11 @@ h3 {
     flex-direction: row;
     gap: var(--space-4);
     opacity: 1;
+    visibility: visible;
     pointer-events: auto;
+    overflow: visible;
+    transform: none;
+    background: transparent;
   }
   .hamburger-menu {
     display: none;
