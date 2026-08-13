@@ -7,10 +7,17 @@
 br {
   display: none;
 }
+
 body {
   font-family: "Inter", sans-serif;
   background-color: var(--clr-neutral-200);
   color: var(--clr-neutral-600);
+}
+
+@media (min-width: 768px) {
+  br {
+    display: inline;
+  }
 }
 h1 {
   color: var(--clr-accent-200);
@@ -85,6 +92,8 @@ p {
   background-size: cover;
   border-radius: var(--b-radius-12);
   overflow: hidden;
+  aspect-ratio: 4 / 3;
+  height: auto;
 }
 .plan-type {
   font-size: var(--fs-xs);
@@ -132,7 +141,7 @@ footer {
   flex-direction: column-reverse;
 }
 .hero-img {
-  min-height: 45vh;
+  min-height: 48vh;
   max-height: 50vh;
 }
 .service-info,
@@ -142,6 +151,29 @@ footer {
 .service-info {
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .even-columns {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-6);
+  }
+
+  .service-info,
+  .hero-img {
+    width: 50%;
+  }
+
+  .hero-img {
+    min-height: 420px;
+    max-height: 520px;
+  }
+
+  .call-to-action {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 .stats {
   display: flex;
@@ -410,6 +442,8 @@ h3 {
     height: auto;
     flex-direction: row;
     gap: var(--space-4);
+    opacity: 1;
+    pointer-events: auto;
   }
   .hamburger-menu {
     display: none;
