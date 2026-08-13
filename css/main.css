@@ -79,7 +79,7 @@ p {
 }
 
 .hero-img {
-  background: url(Verdant/img/hero.jpg);
+  background: url(./Verdant/img/hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
