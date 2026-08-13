@@ -1,0 +1,39 @@
+:root {
+  /*********************Colors************************/
+  --clr-accent-200: #1f3d2b;
+  --clr-accent-100: #2f5d3a;
+  --clr-neutral-600: #5c5c52;
+  --clr-neutral-500: #8a8a7e;
+  --clr-neutral-400: #e4e0d4;
+  --clr-neutral-300: #e8f0e0;
+  --clr-neutral-200: #fbf9f4;
+  --clr-neutral-100: #ffffff;
+  /********************Font sizes************************/
+  --fs-xl: 2.625em;
+  --fs-l: 1.625em;
+  --fs-m: 1.25em;
+  --fs-reg: 1em;
+  --fs-s: 0.9375em;
+  --fs-xs: 0.875em;
+  --fs-xxs: 0.75em;
+  /********************Font weights************************/
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  /********************spacing************************/
+  --space-0: 6px;
+  --space-1: 8px;
+  --space-2: 12px;
+  --space-3: 16px;
+  --space-4: 20px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 56px;
+
+  /********************border radius sizes************************/
+  --b-radius-8: 8px;
+  --b-radius-12: 12px;
+  --b-radius-pill: 100px;
+}
